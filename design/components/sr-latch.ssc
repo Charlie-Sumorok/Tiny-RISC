@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<custom_component>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>SR Latch</name>
+	<description></description>
+	<label></label>
+	<bound right="15" down="15" left="-15" up="-15"/>
+	<colour a="255" r="78" g="154" b="6"/>
+	<pin x="-15" y="-5" length="10" direction="left" id="0" flow="in" label="S" required="true"/>
+	<pin x="-15" y="5" length="10" direction="left" id="1" flow="in" label="R" required="true"/>
+	<pin x="15" y="-5" length="10" direction="right" id="2" flow="out" label="O" required="true"/>
+	<pin x="15" y="5" length="10" direction="right" id="3" flow="out" barlabel="O" required="true"/>
+	<wire id="0">
+		<path>
+			<point x="-35" y="-45"/>
+			<point x="-60" y="-45"/>
+		</path>
+		<tag type="interface" xwire="-60" ywire="-45" xtag="-65" ytag="-45" flow="in" pinid="0" text="Set"/>
+	</wire>
+	<wire id="1">
+		<path>
+			<point x="-35" y="-25"/>
+			<point x="-35" y="35"/>
+			<point x="-60" y="35"/>
+		</path>
+		<tag type="interface" xwire="-60" ywire="35" xtag="-65" ytag="35" flow="out" pinid="2" text="Output"/>
+	</wire>
+	<wire id="2" preset="true">
+		<path>
+			<point x="60" y="-35"/>
+			<point x="35" y="-35"/>
+			<point x="35" y="25"/>
+		</path>
+		<tag type="interface" xwire="60" ywire="-35" xtag="65" ytag="-35" flow="out" pinid="3" text="Output inverted"/>
+	</wire>
+	<wire id="3">
+		<path>
+			<point x="35" y="45"/>
+			<point x="60" y="45"/>
+		</path>
+		<tag type="interface" xwire="60" ywire="45" xtag="65" ytag="45" flow="in" pinid="1" text="Reset"/>
+	</wire>
+	<component id="0" def="Or" x="0" y="-35" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="0" invert="false"/>
+			<subpin wireid="1" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="2" invert="true"/>
+	</component>
+	<component id="1" def="Or" x="0" y="35" direction="left" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="3" invert="false"/>
+			<subpin wireid="2" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="1" invert="true"/>
+	</component>
+</custom_component>

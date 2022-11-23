@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>Tiny RISC</name>
+	<description></description>
+	<component>./components/sr-latch.ssc</component>
+	<component>./components/storage/registers/register-group-slice.ssc</component>
+	<component>./components/storage/registers/8-bit-register.ssc</component>
+	<component>./components/storage/registers/16-bit-register.ssc</component>
+	<component>./components/storage/registers/32-bit-register.ssc</component>
+	<component>./components/storage/registers/64-bit-register.ssc</component>
+</project>
