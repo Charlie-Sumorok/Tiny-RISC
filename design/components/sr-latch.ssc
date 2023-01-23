@@ -10,8 +10,8 @@
 	<colour a="255" r="78" g="154" b="6"/>
 	<pin x="-15" y="-5" length="10" direction="left" id="0" flow="in" label="S" required="true"/>
 	<pin x="-15" y="5" length="10" direction="left" id="1" flow="in" label="R" required="true"/>
-	<pin x="15" y="-5" length="10" direction="right" id="2" flow="out" label="O" required="true"/>
-	<pin x="15" y="5" length="10" direction="right" id="3" flow="out" barlabel="O" required="true"/>
+	<pin x="15" y="-5" length="10" direction="right" id="2" flow="out" label="O" required="false"/>
+	<pin x="15" y="5" length="10" direction="right" id="3" flow="out" barlabel="O" required="false"/>
 	<wire id="0">
 		<path>
 			<point x="-35" y="-45"/>
