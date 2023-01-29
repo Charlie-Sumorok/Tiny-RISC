@@ -7,6 +7,7 @@
 	<description></description>
 	<component>./components/sr-latch.ssc</component>
 	<component>./components/select-byte.ssc</component>
+	<component>./components/clock-demultiplexer.ssc</component>
 	<component>./components/storage/registers/register-group-slice.ssc</component>
 	<component>./components/storage/registers/8-bit-register.ssc</component>
 	<component>./components/storage/registers/16-bit-register.ssc</component>
@@ -17,4 +18,9 @@
 	<component>./components/storage/stack/stack-1Kb.ssc</component>
 	<component>./components/storage/stack/stack-1KB.ssc</component>
 	<component>./components/storage/stack/stack-8KB.ssc</component>
+	<component>./components/storage/ram/ram-1B.ssc</component>
+	<component>./components/storage/ram/ram-8B.ssc</component>
+	<component>./components/storage/ram/ram-1Kb.ssc</component>
+	<component>./components/storage/ram/ram-1KB.ssc</component>
+	<component>./components/storage/ram/ram-8KB.ssc</component>
 </project>
