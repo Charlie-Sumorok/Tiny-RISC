@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<custom_component>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>Conditional swapper</name>
+	<description></description>
+	<label></label>
+	<bound right="25" down="25" left="-25" up="-25"/>
+	<colour a="255" r="78" g="154" b="6"/>
+	<pin x="0" y="-25" length="10" direction="up" id="0" flow="in" label="ES" required="true"/>
+	<pin x="-25" y="-10" length="10" direction="left" id="1" flow="in" label="IB1" required="true"/>
+	<pin x="-25" y="10" length="10" direction="left" id="2" flow="in" label="IB2" required="true"/>
+	<pin x="25" y="-10" length="10" direction="right" id="3" flow="out" label="OB1" required="true"/>
+	<pin x="25" y="10" length="10" direction="right" id="4" flow="out" label="OB2" required="true"/>
+	<wire id="0">
+		<path>
+			<point x="20" y="-120"/>
+			<point x="20" y="-100"/>
+			<point x="-10" y="-100"/>
+			<point x="-10" y="-75"/>
+		</path>
+		<path>
+			<point x="20" y="-100"/>
+			<point x="20" y="0"/>
+			<point x="-10" y="0"/>
+			<point x="-10" y="15"/>
+		</path>
+		<marker x="20" y="-100"/>
+		<tag type="interface" xwire="20" ywire="-120" xtag="20" ytag="-125" flow="in" pinid="0" text="Enable Swap"/>
+	</wire>
+	<wire id="1">
+		<path>
+			<point x="-30" y="-60"/>
+			<point x="-100" y="-60"/>
+		</path>
+		<path>
+			<point x="-60" y="-60"/>
+			<point x="-60" y="60"/>
+			<point x="-30" y="60"/>
+		</path>
+		<marker x="-60" y="-60"/>
+		<tag type="interface" xwire="-100" ywire="-60" xtag="-105" ytag="-60" flow="in" pinid="1" text="Input Bit 1"/>
+	</wire>
+	<wire id="2">
+		<path>
+			<point x="-30" y="30"/>
+			<point x="-100" y="30"/>
+		</path>
+		<path>
+			<point x="-80" y="30"/>
+			<point x="-80" y="-30"/>
+			<point x="-30" y="-30"/>
+		</path>
+		<marker x="-80" y="30"/>
+		<tag type="interface" xwire="-100" ywire="30" xtag="-105" ytag="30" flow="in" pinid="2" text="Input Bit 2"/>
+	</wire>
+	<wire id="3">
+		<path>
+			<point x="10" y="-45"/>
+			<point x="40" y="-45"/>
+		</path>
+		<tag type="interface" xwire="40" ywire="-45" xtag="45" ytag="-45" flow="out" pinid="3" text="Output Bit 1"/>
+	</wire>
+	<wire id="4">
+		<path>
+			<point x="10" y="45"/>
+			<point x="40" y="45"/>
+		</path>
+		<tag type="interface" xwire="40" ywire="45" xtag="45" ytag="45" flow="out" pinid="4" text="Output Bit 2"/>
+	</wire>
+	<component id="0" def="Multiplexer" x="-10" y="-45" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="0" invert="false"/>
+		</connection>
+		<connection flow="in" pinid="1">
+			<subpin wireid="1" invert="false"/>
+			<subpin wireid="2" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="2" wireid="3" invert="false"/>
+	</component>
+	<component id="1" def="Multiplexer" x="-10" y="45" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="0" invert="false"/>
+		</connection>
+		<connection flow="in" pinid="1">
+			<subpin wireid="2" invert="false"/>
+			<subpin wireid="1" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="2" wireid="4" invert="false"/>
+	</component>
+</custom_component>

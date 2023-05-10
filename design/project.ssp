@@ -7,6 +7,7 @@
 	<description></description>
 	<component>./components/sr-latch.ssc</component>
 	<component>./components/select-byte.ssc</component>
+	<component>./components/deselect-byte.ssc</component>
 	<component>./components/clock-demultiplexer.ssc</component>
 	<component>./components/storage/registers/register-group-slice.ssc</component>
 	<component>./components/storage/registers/8-bit-register.ssc</component>
@@ -23,4 +24,16 @@
 	<component>./components/storage/ram/ram-1Kb.ssc</component>
 	<component>./components/storage/ram/ram-1KB.ssc</component>
 	<component>./components/storage/ram/ram-8KB.ssc</component>
+	<component>./components/conditional-swappers/conditional-swapper.ssc</component>
+	<component>./components/conditional-swappers/8-bit-conditional-swapper.ssc</component>
+	<component>./components/bit-copiers/8-bit-bit-copier.ssc</component>
+	<component>./components/bit-copiers/16-bit-bit-copier.ssc</component>
+	<component>./components/bit-copiers/32-bit-bit-copier.ssc</component>
+	<component>./components/bit-copiers/64-bit-bit-copier.ssc</component>
+	<component>./components/bit-movers/2-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/4-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/8-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/16-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/32-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/64-bit-bit-mover.ssc</component>
 </project>
