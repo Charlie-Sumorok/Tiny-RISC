@@ -1911,12 +1911,6 @@
 	</wire>
 	<wire id="164">
 		<path>
-			<point x="-435" y="-210"/>
-			<point x="-435" y="-210"/>
-		</path>
-	</wire>
-	<wire id="165">
-		<path>
 			<point x="10" y="-345"/>
 			<point x="10" y="-840"/>
 			<point x="-1100" y="-840"/>
@@ -1943,7 +1937,7 @@
 		<marker x="-380" y="-840"/>
 		<tag type="interface" xwire="-1100" ywire="-840" xtag="-1105" ytag="-840" flow="in" pinid="0" text="Region count Bit 1"/>
 	</wire>
-	<wire id="166">
+	<wire id="165">
 		<path>
 			<point x="-230" y="-150"/>
 			<point x="-230" y="10"/>
@@ -1987,7 +1981,7 @@
 		<marker x="-360" y="-820"/>
 		<tag type="interface" xwire="-1100" ywire="-820" xtag="-1105" ytag="-820" flow="in" pinid="1" text="Region count Bit 2"/>
 	</wire>
-	<wire id="167">
+	<wire id="166">
 		<path>
 			<point x="-950" y="50"/>
 			<point x="-950" y="40"/>
@@ -2047,7 +2041,7 @@
 		<marker x="-900" y="-420"/>
 		<tag type="interface" xwire="-1100" ywire="-700" xtag="-1105" ytag="-700" flow="in" pinid="5" text="OPeration bit 2"/>
 	</wire>
-	<wire id="168">
+	<wire id="167">
 		<path>
 			<point x="-1100" y="-720"/>
 			<point x="-700" y="-720"/>
@@ -2149,11 +2143,11 @@
 	</component>
 	<component id="2" def="4-bit bit mover" x="-340" y="-80" direction="right" flip="false">
 		<connection flow="in" pinid="0" wireid="114" invert="false"/>
-		<connection flow="in" pinid="1" wireid="166" invert="true"/>
+		<connection flow="in" pinid="1" wireid="165" invert="true"/>
 		<connection flow="in" pinid="2" wireid="115" invert="false"/>
 		<connection flow="in" pinid="3" wireid="117" invert="false"/>
-		<connection flow="in" pinid="4" wireid="168" invert="false"/>
-		<connection flow="in" pinid="5" wireid="167" invert="false"/>
+		<connection flow="in" pinid="4" wireid="167" invert="false"/>
+		<connection flow="in" pinid="5" wireid="166" invert="false"/>
 		<connection flow="in" pinid="6" wireid="133" invert="false"/>
 		<connection flow="in" pinid="7" wireid="134" invert="false"/>
 		<connection flow="in" pinid="8" wireid="141" invert="false"/>
@@ -2173,11 +2167,11 @@
 	</component>
 	<component id="3" def="4-bit bit mover" x="-340" y="80" direction="right" flip="false">
 		<connection flow="in" pinid="0" wireid="114" invert="false"/>
-		<connection flow="in" pinid="1" wireid="166" invert="true"/>
+		<connection flow="in" pinid="1" wireid="165" invert="true"/>
 		<connection flow="in" pinid="2" wireid="115" invert="false"/>
 		<connection flow="in" pinid="3" wireid="117" invert="false"/>
-		<connection flow="in" pinid="4" wireid="168" invert="false"/>
-		<connection flow="in" pinid="5" wireid="167" invert="false"/>
+		<connection flow="in" pinid="4" wireid="167" invert="false"/>
+		<connection flow="in" pinid="5" wireid="166" invert="false"/>
 		<connection flow="in" pinid="6" wireid="143" invert="false"/>
 		<connection flow="in" pinid="7" wireid="144" invert="false"/>
 		<connection flow="in" pinid="8" wireid="145" invert="false"/>
@@ -2250,12 +2244,12 @@
 		<connection flow="out" pinid="24" wireid="47" invert="false"/>
 	</component>
 	<component id="6" def="4-bit bit mover" x="-460" y="400" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="165" invert="false"/>
-		<connection flow="in" pinid="1" wireid="166" invert="false"/>
+		<connection flow="in" pinid="0" wireid="164" invert="false"/>
+		<connection flow="in" pinid="1" wireid="165" invert="false"/>
 		<connection flow="in" pinid="2" wireid="116" invert="false"/>
 		<connection flow="in" pinid="3" wireid="117" invert="true"/>
-		<connection flow="in" pinid="4" wireid="168" invert="false"/>
-		<connection flow="in" pinid="5" wireid="167" invert="false"/>
+		<connection flow="in" pinid="4" wireid="167" invert="false"/>
+		<connection flow="in" pinid="5" wireid="166" invert="false"/>
 		<connection flow="in" pinid="6" wireid="133" invert="false"/>
 		<connection flow="in" pinid="7" wireid="141" invert="false"/>
 		<connection flow="in" pinid="8" wireid="143" invert="false"/>
@@ -2274,12 +2268,12 @@
 		<connection flow="out" pinid="21" wireid="62" invert="false"/>
 	</component>
 	<component id="7" def="4-bit bit mover" x="-460" y="560" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="165" invert="false"/>
-		<connection flow="in" pinid="1" wireid="166" invert="false"/>
+		<connection flow="in" pinid="0" wireid="164" invert="false"/>
+		<connection flow="in" pinid="1" wireid="165" invert="false"/>
 		<connection flow="in" pinid="2" wireid="116" invert="false"/>
 		<connection flow="in" pinid="3" wireid="117" invert="true"/>
-		<connection flow="in" pinid="4" wireid="168" invert="false"/>
-		<connection flow="in" pinid="5" wireid="167" invert="false"/>
+		<connection flow="in" pinid="4" wireid="167" invert="false"/>
+		<connection flow="in" pinid="5" wireid="166" invert="false"/>
 		<connection flow="in" pinid="6" wireid="134" invert="false"/>
 		<connection flow="in" pinid="7" wireid="142" invert="false"/>
 		<connection flow="in" pinid="8" wireid="144" invert="false"/>
@@ -2298,7 +2292,7 @@
 		<connection flow="out" pinid="21" wireid="63" invert="false"/>
 	</component>
 	<component id="8" def="Select Byte" x="-750" y="150" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="168" invert="false"/>
+		<connection flow="in" pinid="0" wireid="167" invert="false"/>
 		<connection flow="in" pinid="1" wireid="80" invert="false"/>
 		<connection flow="in" pinid="2" wireid="88" invert="false"/>
 		<connection flow="out" pinid="3" wireid="64" invert="false"/>
@@ -2325,7 +2319,7 @@
 		<connection flow="out" pinid="24" wireid="71" invert="false"/>
 	</component>
 	<component id="9" def="Select Byte" x="-750" y="810" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="168" invert="false"/>
+		<connection flow="in" pinid="0" wireid="167" invert="false"/>
 		<connection flow="in" pinid="1" wireid="96" invert="false"/>
 		<connection flow="in" pinid="2" wireid="104" invert="false"/>
 		<connection flow="out" pinid="3" wireid="72" invert="false"/>
@@ -2352,7 +2346,7 @@
 		<connection flow="out" pinid="24" wireid="79" invert="false"/>
 	</component>
 	<component id="10" def="Select Byte" x="-950" y="150" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="167" invert="false"/>
+		<connection flow="in" pinid="0" wireid="166" invert="false"/>
 		<connection flow="in" pinid="1" wireid="133" invert="false"/>
 		<connection flow="in" pinid="2" wireid="132" invert="false"/>
 		<connection flow="out" pinid="3" wireid="80" invert="false"/>
@@ -2379,7 +2373,7 @@
 		<connection flow="out" pinid="24" wireid="87" invert="false"/>
 	</component>
 	<component id="11" def="Select Byte" x="-950" y="370" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="167" invert="false"/>
+		<connection flow="in" pinid="0" wireid="166" invert="false"/>
 		<connection flow="in" pinid="1" wireid="134" invert="false"/>
 		<connection flow="in" pinid="2" wireid="146" invert="false"/>
 		<connection flow="out" pinid="3" wireid="88" invert="false"/>
@@ -2406,7 +2400,7 @@
 		<connection flow="out" pinid="24" wireid="95" invert="false"/>
 	</component>
 	<component id="12" def="Select Byte" x="-950" y="810" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="167" invert="false"/>
+		<connection flow="in" pinid="0" wireid="166" invert="false"/>
 		<connection flow="in" pinid="1" wireid="156" invert="false"/>
 		<connection flow="in" pinid="2" wireid="162" invert="false"/>
 		<connection flow="out" pinid="3" wireid="104" invert="false"/>
@@ -2433,7 +2427,7 @@
 		<connection flow="out" pinid="24" wireid="111" invert="false"/>
 	</component>
 	<component id="13" def="Select Byte" x="-950" y="590" direction="right" flip="false">
-		<connection flow="in" pinid="0" wireid="167" invert="false"/>
+		<connection flow="in" pinid="0" wireid="166" invert="false"/>
 		<connection flow="in" pinid="1" wireid="155" invert="false"/>
 		<connection flow="in" pinid="2" wireid="154" invert="false"/>
 		<connection flow="out" pinid="3" wireid="96" invert="false"/>
@@ -2461,8 +2455,8 @@
 	</component>
 	<component id="14" def="Or" x="0" y="-310" direction="down" flip="false">
 		<connection flow="in" pinid="0">
+			<subpin wireid="164" invert="false"/>
 			<subpin wireid="165" invert="false"/>
-			<subpin wireid="166" invert="false"/>
 		</connection>
 		<connection flow="out" pinid="1" wireid="112" invert="false"/>
 	</component>
@@ -2475,8 +2469,8 @@
 	</component>
 	<component id="16" def="And" x="-120" y="-605" direction="down" flip="false">
 		<connection flow="in" pinid="0">
-			<subpin wireid="166" invert="false"/>
 			<subpin wireid="165" invert="false"/>
+			<subpin wireid="164" invert="false"/>
 		</connection>
 		<connection flow="out" pinid="1" wireid="114" invert="false"/>
 	</component>
