@@ -3,7 +3,7 @@
 	<metadata>
 		<version smartsim="1.4.1"/>
 	</metadata>
-	<name>16-bit register</name>
+	<name>16-bit register group</name>
 	<description></description>
 	<label></label>
 	<bound right="20" down="170" left="-20" up="-170"/>
@@ -676,7 +676,7 @@
 		</path>
 		<tag type="interface" xwire="120" ywire="325" xtag="125" ytag="325" flow="out" pinid="65" text="Output inverted bit 16"/>
 	</wire>
-	<component id="0" def="8-bit register" x="-40" y="-110" direction="right" flip="false">
+	<component id="0" def="8-bit register group" x="-40" y="-110" direction="right" flip="false">
 		<connection flow="in" pinid="0" wireid="32" invert="false"/>
 		<connection flow="in" pinid="1" wireid="33" invert="false"/>
 		<connection flow="in" pinid="2" wireid="15" invert="false"/>
@@ -712,7 +712,7 @@
 		<connection flow="out" pinid="32" wireid="24" invert="false"/>
 		<connection flow="out" pinid="33" wireid="16" invert="false"/>
 	</component>
-	<component id="1" def="8-bit register" x="-40" y="110" direction="right" flip="false">
+	<component id="1" def="8-bit register group" x="-40" y="110" direction="right" flip="false">
 		<connection flow="in" pinid="0" wireid="32" invert="false"/>
 		<connection flow="in" pinid="1" wireid="33" invert="false"/>
 		<connection flow="in" pinid="2" wireid="34" invert="false"/>
