@@ -36,4 +36,9 @@
 	<component>./components/bit-movers/16-bit-bit-mover.ssc</component>
 	<component>./components/bit-movers/32-bit-bit-mover.ssc</component>
 	<component>./components/bit-movers/64-bit-bit-mover.ssc</component>
+	<component>./components/bit-movers/index/4-bit-bit-index-bit-mover.ssc</component>
+	<component>./components/bit-movers/index/8-bit-bit-index-bit-mover.ssc</component>
+	<component>./components/bit-movers/index/16-bit-bit-index-bit-mover.ssc</component>
+	<component>./components/bit-movers/index/32-bit-bit-index-bit-mover.ssc</component>
+	<component>./components/bit-movers/index/64-bit-bit-index-bit-mover.ssc</component>
 </project>
