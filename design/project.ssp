@@ -19,6 +19,7 @@
 	<component>./components/storage/stack/stack-1Kb.ssc</component>
 	<component>./components/storage/stack/stack-1KB.ssc</component>
 	<component>./components/storage/stack/stack-8KB.ssc</component>
+	<component>./components/storage/stack/pointer/14-bit-stack-pointer.ssc</component>
 	<component>./components/storage/ram/ram-1B.ssc</component>
 	<component>./components/storage/ram/ram-8B.ssc</component>
 	<component>./components/storage/ram/ram-1Kb.ssc</component>
