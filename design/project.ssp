@@ -24,6 +24,11 @@
 	<component>./components/storage/ram/ram-1Kb.ssc</component>
 	<component>./components/storage/ram/ram-1KB.ssc</component>
 	<component>./components/storage/ram/ram-8KB.ssc</component>
+	<component>./components/storage/ram/bit/bit-ram-1B.ssc</component>
+	<component>./components/storage/ram/bit/bit-ram-8B.ssc</component>
+	<component>./components/storage/ram/bit/bit-ram-1Kb.ssc</component>
+	<component>./components/storage/ram/bit/bit-ram-1KB.ssc</component>
+	<component>./components/storage/ram/bit/bit-ram-8KB.ssc</component>
 	<component>./components/conditional-swappers/conditional-swapper.ssc</component>
 	<component>./components/conditional-swappers/8-bit-conditional-swapper.ssc</component>
 	<component>./components/bit-copiers/8-bit-bit-copier.ssc</component>
