@@ -47,4 +47,18 @@
 	<component>./components/bit-movers/index/16-bit-bit-index-bit-mover.ssc</component>
 	<component>./components/bit-movers/index/32-bit-bit-index-bit-mover.ssc</component>
 	<component>./components/bit-movers/index/64-bit-bit-index-bit-mover.ssc</component>
+	<component>./components/IO/pipes/1b-pipe.ssc</component>
+	<component>./components/IO/pipes/pipe-connector.ssc</component>
+	<component>./components/IO/pipes/2b-pipe.ssc</component>
+	<component>./components/IO/pipes/4b-pipe.ssc</component>
+	<component>./components/IO/pipes/8b-pipe.ssc</component>
+	<component>./components/IO/pipes/16b-pipe.ssc</component>
+	<component>./components/IO/pipes/32b-pipe.ssc</component>
+	<component>./components/IO/pipes/64b-pipe.ssc</component>
+	<component>./components/IO/pipes/128b-pipe.ssc</component>
+	<component>./components/IO/pipes/256b-pipe.ssc</component>
+	<component>./components/IO/pipes/1Kb-pipe.ssc</component>
+	<component>./components/IO/pipes/1KB-pipe.ssc</component>
+	<component>./components/IO/pipes/8KB-pipe.ssc</component>
+	<component>./components/IO/pipes/1Mb-pipe.ssc</component>
 </project>

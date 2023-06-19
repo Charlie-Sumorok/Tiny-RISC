@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<custom_component>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>1b pipe</name>
+	<description></description>
+	<label></label>
+	<bound right="20" down="20" left="-20" up="-20"/>
+	<colour a="255" r="136" g="138" b="133"/>
+	<pin x="-20" y="-15" length="10" direction="left" id="0" flow="in" label="D1" required="true"/>
+	<pin x="-20" y="-5" length="10" direction="left" id="1" flow="in" label="D0" required="true"/>
+	<pin x="20" y="-15" length="10" direction="right" id="2" flow="out" label="DO" required="true"/>
+	<pin x="20" y="-5" length="10" direction="right" id="3" flow="out" barlabel="DO" required="false"/>
+	<pin x="-20" y="5" length="10" direction="left" id="4" flow="in" label="F" required="true"/>
+	<pin x="-20" y="15" length="10" direction="left" id="5" flow="in" label="E" required="true"/>
+	<pin x="20" y="5" length="10" direction="right" id="6" flow="out" label="FO" required="false"/>
+	<pin x="20" y="15" length="10" direction="right" id="7" flow="out" label="EO" required="false"/>
+	<wire id="0">
+		<path>
+			<point x="-25" y="-45"/>
+			<point x="-40" y="-45"/>
+			<point x="-40" y="-60"/>
+			<point x="-45" y="-60"/>
+		</path>
+	</wire>
+	<wire id="1">
+		<path>
+			<point x="-25" y="-35"/>
+			<point x="-40" y="-35"/>
+			<point x="-40" y="-20"/>
+			<point x="-45" y="-20"/>
+		</path>
+	</wire>
+	<wire id="2">
+		<path>
+			<point x="-115" y="-50"/>
+			<point x="-160" y="-50"/>
+		</path>
+		<tag type="interface" xwire="-160" ywire="-50" xtag="-165" ytag="-50" flow="in" pinid="0" text="set Data to 1"/>
+	</wire>
+	<wire id="3">
+		<path>
+			<point x="-115" y="-30"/>
+			<point x="-160" y="-30"/>
+		</path>
+		<tag type="interface" xwire="-160" ywire="-30" xtag="-165" ytag="-30" flow="in" pinid="1" text="set Data to 0"/>
+	</wire>
+	<wire id="4">
+		<path>
+			<point x="25" y="-45"/>
+			<point x="40" y="-45"/>
+			<point x="40" y="-50"/>
+			<point x="60" y="-50"/>
+		</path>
+		<tag type="interface" xwire="60" ywire="-50" xtag="65" ytag="-50" flow="out" pinid="2" text="Data Output"/>
+	</wire>
+	<wire id="5">
+		<path>
+			<point x="25" y="-35"/>
+			<point x="40" y="-35"/>
+			<point x="40" y="-30"/>
+			<point x="60" y="-30"/>
+		</path>
+		<tag type="interface" xwire="60" ywire="-30" xtag="65" ytag="-30" flow="out" pinid="3" text="Data inverted Output"/>
+	</wire>
+	<wire id="6">
+		<path>
+			<point x="-25" y="35"/>
+			<point x="-40" y="35"/>
+			<point x="-40" y="30"/>
+			<point x="-160" y="30"/>
+		</path>
+		<tag type="interface" xwire="-160" ywire="30" xtag="-165" ytag="30" flow="in" pinid="4" text="Fill"/>
+	</wire>
+	<wire id="7">
+		<path>
+			<point x="-25" y="45"/>
+			<point x="-40" y="45"/>
+			<point x="-40" y="50"/>
+			<point x="-160" y="50"/>
+		</path>
+		<tag type="interface" xwire="-160" ywire="50" xtag="-165" ytag="50" flow="in" pinid="5" text="Empty"/>
+	</wire>
+	<wire id="8">
+		<path>
+			<point x="25" y="35"/>
+			<point x="40" y="35"/>
+			<point x="40" y="0"/>
+			<point x="-40" y="0"/>
+			<point x="-40" y="20"/>
+			<point x="-140" y="20"/>
+			<point x="-140" y="-10"/>
+			<point x="-115" y="-10"/>
+		</path>
+		<path>
+			<point x="-140" y="-10"/>
+			<point x="-140" y="-70"/>
+			<point x="-115" y="-70"/>
+		</path>
+		<path>
+			<point x="40" y="30"/>
+			<point x="60" y="30"/>
+		</path>
+		<marker x="-140" y="-10"/>
+		<marker x="40" y="30"/>
+		<tag type="interface" xwire="60" ywire="30" xtag="65" ytag="30" flow="out" pinid="6" text="Filled Output"/>
+	</wire>
+	<wire id="9">
+		<path>
+			<point x="25" y="45"/>
+			<point x="40" y="45"/>
+			<point x="40" y="50"/>
+			<point x="60" y="50"/>
+		</path>
+		<tag type="interface" xwire="60" ywire="50" xtag="65" ytag="50" flow="out" pinid="7" text="Empty Output"/>
+	</wire>
+	<component id="0" def="SR Latch" x="0" y="40" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="6" invert="false"/>
+		<connection flow="in" pinid="1" wireid="7" invert="false"/>
+		<connection flow="out" pinid="2" wireid="8" invert="false"/>
+		<connection flow="out" pinid="3" wireid="9" invert="false"/>
+	</component>
+	<component id="1" def="SR Latch" x="0" y="-40" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="0" invert="false"/>
+		<connection flow="in" pinid="1" wireid="1" invert="false"/>
+		<connection flow="out" pinid="2" wireid="4" invert="false"/>
+		<connection flow="out" pinid="3" wireid="5" invert="false"/>
+	</component>
+	<component id="2" def="And" x="-80" y="-60" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="8" invert="false"/>
+			<subpin wireid="2" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="0" invert="false"/>
+	</component>
+	<component id="3" def="And" x="-80" y="-20" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="3" invert="false"/>
+			<subpin wireid="8" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="1" invert="false"/>
+	</component>
+</custom_component>
