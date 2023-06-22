@@ -2591,4 +2591,14 @@
 		</connection>
 		<connection flow="out" pinid="1" wireid="152" invert="false"/>
 	</component>
+	<annotation x="-260" y="-320" text="Block size is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-80" y="-320" text="Region count is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-520" y="-540" text="Decrement 2-bit number" fontsize="12"/>
+	<annotation x="-180" y="-540" text="Decrement 2-bit number" fontsize="12"/>
+	<annotation x="-1380" y="-650" text="MSb" fontsize="12"/>
+	<annotation x="-1380" y="-630" text="LSb" fontsize="12"/>
+	<annotation x="-1360" y="-590" text="MSb" fontsize="12"/>
+	<annotation x="-1360" y="-570" text="LSb" fontsize="12"/>
+	<annotation x="-1360" y="-530" text="MSb" fontsize="12"/>
+	<annotation x="-1360" y="-510" text="LSb" fontsize="12"/>
 </custom_component>

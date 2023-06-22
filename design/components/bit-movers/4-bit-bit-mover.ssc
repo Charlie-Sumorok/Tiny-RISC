@@ -1396,4 +1396,19 @@
 		</connection>
 		<connection flow="out" pinid="1" wireid="41" invert="false"/>
 	</component>
+	<annotation x="-990" y="235" text="NOTE: the `select` bit closer to the inputs is more significant" fontsize="12"/>
+	<annotation x="-890" y="150" text="Grouped by OPeration: abcd bcda dabc dcba" fontsize="12"/>
+	<annotation x="-880" y="180" text="Grouped by position: abdd bcac cdbb daca" fontsize="12"/>
+	<annotation x="-740" y="-590" text="MSb" fontsize="12"/>
+	<annotation x="-740" y="-570" text="LSb" fontsize="12"/>
+	<annotation x="-760" y="-650" text="MSb" fontsize="12"/>
+	<annotation x="-760" y="-630" text="LSb" fontsize="12"/>
+	<annotation x="-740" y="-525" text="MSb" fontsize="12"/>
+	<annotation x="-740" y="-510" text="LSb" fontsize="12"/>
+	<annotation x="-90" y="-570" text="Region count is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-200" y="-540" text="Block size is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-720" y="-470" text="MSb" fontsize="12"/>
+	<annotation x="-720" y="-410" text="LSb" fontsize="12"/>
+	<annotation x="120" y="-360" text="MSb" fontsize="12"/>
+	<annotation x="120" y="-60" text="LSb" fontsize="12"/>
 </custom_component>

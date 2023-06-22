@@ -4270,4 +4270,18 @@
 		<connection flow="out" pinid="36" wireid="125" invert="false"/>
 		<connection flow="out" pinid="37" wireid="127" invert="false"/>
 	</component>
+	<annotation x="-360" y="-960" text="Decrement 3-bit number" fontsize="12"/>
+	<annotation x="-640" y="-960" text="Decrement 3-bit number" fontsize="12"/>
+	<annotation x="-100" y="-600" text="Region count is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-480" y="-420" text="Block size is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-1360" y="-1170" text="MSb" fontsize="12"/>
+	<annotation x="-1360" y="-1130" text="LSb" fontsize="12"/>
+	<annotation x="-1340" y="-1090" text="MSb" fontsize="12"/>
+	<annotation x="-1340" y="-1050" text="LSb" fontsize="12"/>
+	<annotation x="-1340" y="-1010" text="MSb" fontsize="12"/>
+	<annotation x="-1340" y="-990" text="LSb" fontsize="12"/>
+	<annotation x="-1320" y="-950" text="MSb" fontsize="12"/>
+	<annotation x="-1320" y="-650" text="LSb" fontsize="12"/>
+	<annotation x="160" y="-400" text="MSb" fontsize="12"/>
+	<annotation x="160" y="-40" text="LSb" fontsize="12"/>
 </custom_component>

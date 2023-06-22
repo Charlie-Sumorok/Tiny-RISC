@@ -4850,4 +4850,14 @@
 		</connection>
 		<connection flow="out" pinid="1" wireid="298" invert="false"/>
 	</component>
+	<annotation x="-80" y="-540" text="Region count is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-500" y="-540" text="Block size is at least `1&lt;&lt;1`" fontsize="12"/>
+	<annotation x="-360" y="-1000" text="Decrement 3-bit number" fontsize="12"/>
+	<annotation x="-960" y="-840" text="Decrement 3-bit number" fontsize="12"/>
+	<annotation x="-1820" y="-1070" text="MSb" fontsize="12"/>
+	<annotation x="-1820" y="-1030" text="LSb" fontsize="12"/>
+	<annotation x="-1800" y="-990" text="MSb" fontsize="12"/>
+	<annotation x="-1800" y="-950" text="LSb" fontsize="12"/>
+	<annotation x="-1800" y="-910" text="MSb" fontsize="12"/>
+	<annotation x="-1800" y="-890" text="LSb" fontsize="12"/>
 </custom_component>
