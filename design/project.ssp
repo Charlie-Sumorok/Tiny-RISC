@@ -61,6 +61,6 @@
 	<component>./components/IO/pipes/1KB-pipe.ssc</component>
 	<component>./components/IO/pipes/8KB-pipe.ssc</component>
 	<component>./components/IO/pipes/1Mb-pipe.ssc</component>
-	<component>./components/states/state-controller.ssc</component>
-	<component>./components/states/fetch-state.ssc</component>
+	<component>./components/FSM/state-controller.ssc</component>
+	<component>./components/FSM/states/fetch-state.ssc</component>
 </project>
