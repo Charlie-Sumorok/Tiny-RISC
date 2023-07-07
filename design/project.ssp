@@ -7,6 +7,7 @@
 	<description></description>
 	<component>./components/sr-latch.ssc</component>
 	<component>./components/select-byte.ssc</component>
+	<component>./components/select-pointer.ssc</component>
 	<component>./components/deselect-byte.ssc</component>
 	<component>./components/clock-demultiplexer.ssc</component>
 	<component>./components/storage/registers/register-group-slice.ssc</component>
